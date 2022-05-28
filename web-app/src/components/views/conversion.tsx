@@ -1,21 +1,45 @@
-import { Box, Flex, Text} from "@chakra-ui/react"
+import { Box, Button, Flex, Heading, Spacer, Text, useMediaQuery} from "@chakra-ui/react"
+import BarChart from "../../overlay/charts/barChart";
+import BarChar from "../../overlay/charts/lineChart";
 
 const ConversionView = () =>{
+    const [isMobile] = useMediaQuery("(max-width: 768px)");
     return (
-        <Flex>
-            <Box className='boxShadow' textAlign='center' w='full' borderRadius='10px' border='1px solid #E5E5E5'>
-                <Text color='#171725' fontWeight='700' p='24px' pb='12px' pt='12px'>Transactions</Text>
-                <Text fontWeight='800' fontSize='45px' color='#6979F8' pb='12px'>35</Text>
-                <Text fontSize='12px' color='#999999' pb='12px'>LAST MONTH</Text>
-            </Box>
-            <Box w='50px'/>
-            <Box className='boxShadow' textAlign='center' w='full' borderRadius='10px' border='1px solid #E5E5E5'>
-                <Text color='#171725' fontWeight='700' p='24px' pb='12px' pt='12px'>Transactions</Text>
-                <Text fontWeight='800' fontSize='45px' color='#6979F8' pb='12px'>3</Text>
-                <Text fontSize='12px' color='#999999' pb='12px'>TODAY</Text>
-            </Box>
+        <>
+        {!isMobile && 
+            <Box w='100%' className='boxShadow' textAlign='left'  borderRadius='10px' border='1px solid #E5E5E5' mt={{base: '37px', lg:'15px'}}>
+                <Flex p='32px'>
+                    <Heading as='h5' fontSize='24px'>Conversion</Heading>
+                    <Spacer/>
+                    <Button variant='outline' color='gray.800'>...</Button>
+                </Flex>
+                <BarChart/>
+                <Flex p='24px' pt='10px'>
+                    <Flex alignItems='flex-start'>
+                        <Box borderRadius='100%' bg='#007AFF' width='8px' height='8px'></Box>
+                        <Text color='#9C9C9C' fontSize='12px' ml='16px'> Screens</Text>
+                    </Flex>
+                    <Spacer/>
+                    <Flex alignItems='flex-start'>
+                        <Box borderRadius='100%' bg='#FB8832' width='8px' height='8px'></Box>
+                        <Text color='#9C9C9C' fontSize='12px' ml='16px'> PC</Text>
+                    </Flex>
+                    <Spacer/>
+                    <Flex alignItems='flex-start'>
+                        <Box borderRadius='100%' bg='#9B51E0' width='8px' height='8px'></Box>
+                        <Text color='#9C9C9C' fontSize='12px' ml='16px'> Phones</Text>
+                    </Flex>
+                    <Spacer/>
+                    <Flex alignItems='flex-start'>
+                        <Box borderRadius='100%' bg='#E6E5E6' width='8px' height='8px'></Box>
+                        <Text color='#9C9C9C' fontSize='12px' ml='16px'> Other</Text>
+                    </Flex>
+                    
+                </Flex>
 
-        </Flex>
+            </Box>
+        }
+        </>
     )
 }
 export default ConversionView;
