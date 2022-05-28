@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider, Container, Text, Box, useMediaQuery, Flex, Spacer} from '@chakra-ui/react'
+import Navbar from './components/navbar/index.tsx'
+
+import './global.css'
 
 function App() {
+  const [isMobile] = useMediaQuery("(max-width: 768px)") 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ChakraProvider >
+      <Box maxH='100vh' bg={!isMobile ? '#F2F6F9' : 'white'}></Box>
+        <Navbar/>
+        
+        <Container w='full' pl='16px' pr='16px'>
+          
+              
+        </Container>
+
+    </ChakraProvider>
+  )
 }
 
-export default App;
+export default App
