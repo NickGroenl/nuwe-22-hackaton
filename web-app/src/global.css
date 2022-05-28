@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+p{
+    font-family: 'Montserrat';    
+    font-style: normal;
+    font-weight: 600;
+    color: #00093E;
+}
+
+h5{
+    font-family: 'Montserrat';    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 132%;
+    color: #00093E;
+}
+h6{
+    font-family: 'Montserrat';    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+
+    color: #00093E;
+}
+
+.boxShadow{
+    box-shadow: 0px 24px 32px 0px rgba(50, 50, 71, 0.08);
+}
