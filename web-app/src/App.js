@@ -1,4 +1,5 @@
-import { ChakraProvider, Container, Text, Box, useMediaQuery, Flex, Spacer} from '@chakra-ui/react'
+import React from 'react';
+import { ChakraProvider, Box, useMediaQuery, Flex} from '@chakra-ui/react'
 import Navbar from './components/navbar/index.tsx'
 import TransactionView from './components/views/transactions';
 import ConversionView from './components/views/conversion';

@@ -1,12 +1,12 @@
 import { SetStateAction } from "react";
 
-export interface ITodo {
-    id: number;
-    title: string;
-    description: string;
-    status: boolean;
+export interface Transactions {
+    _id: number;
+    date: Date;
+    value: number;
+    from: string;
 }
 export type TodoContextType = {
-  transactions: ITodo[];
-  setTransactions: React.Dispatch<SetStateAction<ITodo[]>>;
+  transactions: Transactions[];
+  setTransactions: React.Dispatch<SetStateAction<Transactions[]>>;
 };
