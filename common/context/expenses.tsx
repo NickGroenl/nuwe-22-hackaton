@@ -1,14 +1,14 @@
 import * as React from 'react';
-import { ContextTransactionsType, Transactions } from '../types/transactions';
+import { ContextExpensesType, Expenses } from '../types/expenses';
 
-export const TransactionsContext = React.createContext<ContextTransactionsType | null>(null);
+export const TransactionsContext = React.createContext<ContextExpensesType | null>(null);
 
 interface ProviderProps {
   children?: any
 }
 
 const TransactionsProvider: React.FC<ProviderProps> = ({children}) => {
-  const [transactions, setTransactions] = React.useState<Transactions[]>();
+  const [transactions, setTransactions] = React.useState<Expenses[]>();
   return (
     <TransactionsContext.Provider value={{ transactions, setTransactions }}>
       {children}

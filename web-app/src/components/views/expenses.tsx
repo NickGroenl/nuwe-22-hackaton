@@ -8,7 +8,7 @@ const ExpensesView = () =>{
             <Flex alignItems='flex-start'>
                 <Heading mb='32px' as='h5' fontSize='24px'>Weekly expenses</Heading>
                 <Spacer/>
-                <Button rightIcon={<CalendarIcon/>} variant='solid' color='black' bg='rgba(229, 229, 229, 1)' padding=''>Oct - Nov 2019</Button>
+                <Button rightIcon={<CalendarIcon/>} variant='solid' color='black' bg='rgba(249, 249, 249, 1)' padding=''>Oct - Nov 2019</Button>
             </Flex>
             <AreaCharts/>
             <Text fontSize='12px' color='rgba(156, 156, 156, 1)' mt='61px'>Total Revenue</Text>

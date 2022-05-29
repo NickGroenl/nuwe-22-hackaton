@@ -6,7 +6,7 @@ export interface Transactions {
     value: number;
     from: string;
 }
-export type TodoContextType = {
+export type ContextTransactionsType = {
   transactions: Transactions[];
   setTransactions: React.Dispatch<SetStateAction<Transactions[]>>;
 };
