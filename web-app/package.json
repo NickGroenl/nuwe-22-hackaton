@@ -40,6 +40,7 @@
   "devDependencies": {
     "@types/customize-cra": "^1.0.2",
     "customize-cra": "^1.0.0",
-    "react-app-rewired": "^2.2.1"
+    "react-app-rewired": "^2.2.1",
+    "typescript": "^4.7.2"
   }
 }
