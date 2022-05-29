@@ -10,6 +10,8 @@ La migracion es muy sencilla, en la carpeta common se encuentran los posibles ar
 Y se pueden agregar muchos mas como mudar los iconos, las validaciones de datos, la seguridad de endpoints, al final el unico requisito para mudarlo es realizar la UI en la plataforma que se requiera.
 
 
+![web](https://user-images.githubusercontent.com/57513207/170886429-1b7668b7-c250-415c-9fc4-1cfaeeb59ce8.png)
+![mobile](https://user-images.githubusercontent.com/57513207/170886431-4be5e0ca-9951-475f-b6d8-47bf5c443aea.png)
 
 
 # Possible errors
