@@ -2,6 +2,13 @@
 
 Para iniciar la aplicación, desde la raiz en su terminal escriba "cd web-app && npm i && npm || yarn start"
 
+La migracion es muy sencilla, en la carpeta common se encuentran los posibles archivos compartidos entre los que se encuentran:
+- Rutas de API
+- Modelos de datos
+
+
+Y se pueden agregar muchos mas como mudar los iconos, las validaciones de datos, la seguridad de endpoints, al final el unico requisito para mudarlo es realizar la UI en la plataforma que se requiera.
+
 
 
 
